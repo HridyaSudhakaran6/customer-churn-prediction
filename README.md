@@ -46,7 +46,7 @@ The project uses the Telco Customer Churn dataset containing information about:
 
 The dataset is moderately imbalanced, with approximately 26–27% of customers experiencing churn.
 
-![Churn Distribution](churn_distribution.png)
+![Churn Distribution](Churn_Distribution.png)
 
 ---
 
@@ -66,7 +66,7 @@ Evaluation metrics used:
 
 ### Model Comparison
 
-![Model Comparison](model_comparison.png)
+![Model Comparison](Model_Comparison.png)
 
 ---
 
@@ -79,7 +79,7 @@ Important factors influencing churn include:
 - Lack of online security, backup, and tech support
 - Electronic check payment method
 
-![Feature Importance](feature_importance.png)
+![Feature Importance](Feature_Importance.png)
 
 ---
 
