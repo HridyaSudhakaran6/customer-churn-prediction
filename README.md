@@ -1,43 +1,119 @@
 # Customer Churn Prediction Using Machine Learning
+
 ## Project Overview
 
-This project focuses on predicting customer churn using machine learning.  
-The goal is to identify customers who are likely to leave a telecom service based on their usage and demographic data.
+Customer churn is a major challenge for subscription-based businesses. Retaining existing customers is often more cost-effective than acquiring new ones.
+
+This project focuses on building a machine learning model to predict telecom customer churn using customer demographics, service usage, and billing information.
+
+The goal is to identify high-risk customers and provide insights that can support customer retention strategies.
+
+---
+
 ## Problem Statement
 
-Customer churn is a major issue for subscription-based businesses. Losing existing customers is more costly than acquiring new ones. This project aims to reduce churn by identifying at-risk customers early.
+Develop a machine learning model that predicts whether a customer is likely to churn based on their characteristics and service usage patterns.
+
+---
+
 ## Dataset
 
-- Name: Telco Customer Churn Dataset  
-- Rows: 7043  
-- Columns: 21  
-- Target: Churn 
-## Workflow
+The project uses the Telco Customer Churn dataset containing information about:
 
-1. Data Cleaning  
-2. Exploratory Data Analysis (EDA)  
-3. Feature Engineering  
-4. Train-Test Split  
-5. Model Building  
-6. Model Evaluation
-## Models Used
+- Customer demographics
+- Account details
+- Services subscribed
+- Billing information
+- Churn status
 
-- Logistic Regression (Baseline Model)
-- Random Forest Classifier (Final Model)
-## Results
+---
 
-| Model | Accuracy | Recall |
-|------|--------|--------|
-| Logistic Regression | 0.73 | 0.79 |
-| Random Forest | 0.75 | 0.70 |
-## Key Insights
+## Project Workflow
 
-- Customers with short tenure are more likely to churn  
-- Month-to-month contracts have highest churn rate  
-- Higher monthly charges increase churn risk
-## Business Impact
+- Data understanding and exploration
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Model building
+- Model evaluation
+- Business insights
 
-This model helps telecom companies identify at-risk customers early and take preventive actions such as discounts or improved support.
+---
+
+## Exploratory Data Analysis
+
+### Churn Distribution
+
+The dataset is moderately imbalanced, with approximately 26–27% of customers experiencing churn.
+
+![Churn Distribution](churn_distribution.png)
+
+---
+
+## Machine Learning Models
+
+The following classification models were trained and compared:
+
+- Logistic Regression
+- Random Forest Classifier
+
+Evaluation metrics used:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+### Model Comparison
+
+![Model Comparison](model_comparison.png)
+
+---
+
+## Feature Importance and Churn Drivers
+
+Important factors influencing churn include:
+
+- Month-to-month contracts
+- Fiber optic internet service
+- Lack of online security, backup, and tech support
+- Electronic check payment method
+
+![Feature Importance](feature_importance.png)
+
+---
+
+## Business Insights
+
+- Month-to-month customers are more likely to churn.
+- Customers without support services show higher churn risk.
+- Service bundles and retention offers can help improve customer loyalty.
+- High-risk customers can be identified early for targeted retention campaigns.
+
+---
+
+## Business Recommendations
+
+- Target month-to-month fiber optic customers with retention offers.
+- Promote security, backup, and support service bundles.
+- Monitor high-risk payment segments.
+- Use churn prediction models for regular customer risk scoring.
+
+---
+
 ## Conclusion
 
-This project demonstrates an end-to-end machine learning pipeline for customer churn prediction using real-world data.
+This project demonstrates how machine learning can be used to predict customer churn and generate actionable business insights. The developed model can help businesses identify customers at risk and support proactive retention strategies.
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
